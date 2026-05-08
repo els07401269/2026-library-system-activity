@@ -184,7 +184,7 @@ class LegacyLibrarySystem{
     }
 }
 
-$lib = new LibrarySystem();
+$lib = new LegacyLibrarySystem();
 $lib->connect();
 
 $action = $_GET['act'] ?? null;
