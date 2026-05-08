@@ -1,6 +1,6 @@
 # Student Library Management System
 
-A refactored OOP PHP application for managing library books, borrow records,
+A OOP PHP application for managing library books, borrow records,
 and overdue fines. Built following PSR-12 coding standards.
 
 ## Author
@@ -17,9 +17,6 @@ and overdue fines. Built following PSR-12 coding standards.
 
 1. Clone the repository
    git clone https://github.com/dwcl-sirlana/2026-library-system-activity.git
-2. Import `database/schema.sql` into MySQL
-3. Copy `.env.example` to `.env` and configure database credentials
-4. Run `composer install`
 
 ## File Structure
 
@@ -43,25 +40,18 @@ All PHP files follow PSR-12 coding standards:
 
 ## Usage Examples
 
-### Adding a Book
 
-```php
-$connection = new DatabaseConnection($config);
-$repository = new BookRepository($connection);
-$book = new Book('The Great Gatsby', 'F. Scott Fitzgerald', 1925, 'Fiction');
-$bookId = $repository->addBook($book);
-```
+### Adding a Book
+1.Go to the add book section
+2.Enter the book details such as the title , author ,published year , and category.
+3.Click the "save" button to add the book to the LegacyLibrarySystem.
 
 ### Borrowing a Book
-
-```php
-$service = new LibraryService($bookRepository, $borrowRepository);
-$service->borrowBook(101, 42, 14); // student 101 borrows book 42 for 14 days
-```
+1.Select a book from the available book list
+2.Click the "borrow" button.
+3.Confirm the transaction to successfully borrow the book.
 
 ### Returning a Book
-
-```php
-$fine = $service->returnBook(55); // returns record #55, returns fine amount
-echo 'Fine: ₱' . number_format($fine, 2);
-```
+1.Go to the Borrowed book section.
+2.Select the borrowed book.
+3.Click the "returned" button to complete the return process.
