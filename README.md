@@ -49,7 +49,8 @@ All PHP files follow PSR-12 coding standards:
 ### Borrowing a Book
 1.Select a book from the available book list
 2.Click the "borrow" button.
-3.Confirm the transaction to successfully borrow the book.
+3.Enter the borrower details such as the (student id , book id and number of days to borrow )
+4.Confirm the transaction to successfully borrow the book.
 
 ### Returning a Book
 1.Go to the Borrowed book section.
