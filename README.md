@@ -43,7 +43,7 @@ All PHP files follow PSR-12 coding standards:
 
 ### Adding a Book
 1.Go to the add book section
-2.Enter the book details such as the title , author ,published year , and category.
+2.Enter the book details such as the id , title , author , year , and genre.
 3.Click the "save" button to add the book to the LegacyLibrarySystem.
 
 ### Borrowing a Book
